@@ -13,7 +13,6 @@ import numpy as np
 from mpl_toolkits.mplot3d import Axes3D
 import scipy.io as sio
 
-'''
 fig = plt.figure()
 ax = Axes3D(fig)
 X = np.arange(-4, 4, 0.25)
@@ -26,7 +25,7 @@ Z = np.sin(R)
 ax.plot_surface(X, Y, Z, rstride=1, cstride=1, cmap='rainbow')
 
 plt.show()
-'''
+
 mat1 = '4a.mat' #这是存放数据点的文件，需要它才可以画出来。上面有下载地址
 data = sio.loadmat(mat1)
 m = data['data']
